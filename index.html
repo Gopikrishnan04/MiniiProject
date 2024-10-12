@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  
+    <!-- Preconnect for Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+    <!-- Import Londrina Sketch Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap" rel="stylesheet">
+  
+    <title>Editkaro.in Portfolio</title>
+  </head>
+  
+<body>
+  <!-- Header Section -->
+  <header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h1 class="londrina-sketch-regular">Welcome to Editkaro.in</h1>
+    <h2 class="londrina-sketch-regular">Your One-Stop Solution for Social Media Marketing & Video Editing</h2>
+    <a href="#portfolio" class="cta-button">View Our Work</a>
+  </section>
+  
+  <section id="portfolio">
+    <h2 class="londrina-sketch-regular">Our Work</h2>
+
+  
+  
+    <!-- Video Gallery -->
+    <div class="video-gallery">
+      <div class="video-card" data-category="short-form">
+        <div class="aspect-ratio-box">
+          <video controls>
+            <source src="Color Grading.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <h3>Color Grading</h3>
+      </div>
+  
+      <div class="video-card" data-category="long-form">
+        <div class="aspect-ratio-box">
+          <video controls>
+            <source src="Talking head.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <h3>Long-form Video</h3>
+      </div>
+  
+      <div class="video-card" data-category="ads">
+        <div class="aspect-ratio-box">
+          <video controls>
+            <source src="gta5.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <h3>GTA V</h3>
+      </div>
+  
+      <div class="video-card" data-category="documentary">
+        <div class="aspect-ratio-box">
+          <video controls>
+            <source src="DOCUMENTRY.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <h3>Documentary Style</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="londrina-sketch-regular">Get in Touch</h2>
+    <p>We'd love to hear from you! Please fill out the form below and we'll get back to you shortly.</p>
+
+    <form id="contact-form" action="https://formspree.io/f/mgveeejz" method="post">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+
+      <button type="submit" class="submit-button">Send Message</button>
+    </form>
+  </section>
+  
+  
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Editkaro.in. All rights reserved.</p>
+  </footer>
+
+  <!-- Lightbox Video Popup -->
+  <div id="lightbox" class="lightbox">
+    <video controls></video>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

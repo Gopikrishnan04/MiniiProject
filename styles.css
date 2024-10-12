@@ -1,0 +1,258 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #000;
+  }
+  
+  header {
+    background-color: #4e8397; /* Teal background */
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  #hero {
+    height: 80vh;
+    background: url('backkkk.jpg') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+  
+  
+  #hero h1 {
+    font-size: 3rem;
+    color: #845ec2; /* Purple for hero text */
+    margin-bottom: 20px;
+  }
+  
+  #hero h2 {
+    font-size: 1.2rem;
+    color: #845ec2; /* Light beige for secondary text */
+    margin-bottom: 30px;
+  }
+  /* CTA Button */
+.cta-button {
+  background-color: #00d9ff;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 25px;
+  margin-top: 20px;
+}
+
+/* Londrina Sketch Font */
+.londrina-sketch-regular {
+  font-family: "Londrina Sketch", sans-serif;
+}
+
+/* Applying Londrina Sketch to Titles */
+h1.londrina-sketch-regular {
+  font-family: "Londrina Sketch", sans-serif; /* Main title with Londrina Sketch */
+}
+
+h2.londrina-sketch-regular {
+  font-family: "Londrina Sketch", sans-serif; /* Section title with Londrina Sketch */
+}
+  
+#portfolio {
+  padding: 50px 20px;
+}
+#portfolio h2 {
+  text-align: center;
+  color: #00a2c6;
+}
+  .filter-buttons {
+    margin-bottom: 20px;
+  }
+  
+  .filter-buttons button {
+    background-color: #4e8397; /* Teal buttons */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .filter-buttons button:hover {
+    background-color: #845ec2; /* Purple on hover */
+  }
+  
+  .video-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  /* Aspect Ratio Container */
+.aspect-ratio-box {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (9/16 = 0.5625) */
+    overflow: hidden;
+    background-color: #000; /* Background color in case video doesn't load */
+  }
+  
+  .aspect-ratio-box video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the container */
+  }
+  
+  
+  .video-card {
+    background-color:#c1faff ;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .video-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .video-card img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease;
+  }
+  
+  .video-card:hover img {
+    opacity: 0.8;
+  }
+  
+  .video-card h3 {
+    padding: 15px;
+    background-color: #d5cabd; /* Light beige for card titles */
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
+  .lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+  
+  .lightbox video {
+    max-width: 90%;
+    max-height: 80%;
+  }
+  
+  .lightbox.active {
+    display: flex;
+  }
+
+  #contact {
+    padding: 50px 20px;
+    background-color: #c1faff; /* Pale Cyan Background */
+    text-align: center;
+  }
+  
+  #contact h2 {
+    font-family: 'Londrina Sketch', sans-serif;
+    color: #7f2c00; /* Dark Burnt Orange */
+  }
+  
+  #contact p {
+    color: #00a2c6; /* Deep Teal */
+    margin-bottom: 20px;
+  }
+  
+  #contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f0f0f0; /* Light background for inputs */
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .submit-button {
+    background-color: #00d9ff; /* Bright Cyan for the button */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .submit-button:hover {
+    background-color: #00a2c6; /* Darker cyan on hover */
+  }
+  
+  footer {
+    background-color: #4e8397; /* Teal background for footer */
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    #hero h1 {
+      font-size: 2rem;
+    }
+  
+    .video-gallery {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+  }
+  
